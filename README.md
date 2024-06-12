@@ -8,11 +8,11 @@
 
 ## Thoughts
 
-- Easy to create a polyfill for Angular.
-- There are plenty resources where you can find polyfills that you can copy and paste.
-- It is important to verify the polyfill is actually being used.  I added a `console.log` to see if the polyfill was being used.  I also checked for the polyfill file in the bundle.
-- Used the new `Object.groupBy`method for the subject of the polyfill.  
-- This method is really not great for Angular, as such a structure can be hard to iterate over in an Angular template.  You cannot use `Object.keys()` and nested `keyvalue` pipes can be difficult to implement.
+- It is easy to create a polyfill for Angular.
+- There are plenty of resources to find polyfills that you can copy and paste.
+- It is important to verify that the polyfill is actually being used.  I added a `console.log` to see if the polyfill was being used.  I also checked for the polyfill file in the bundle.
+- I used the new `Object.groupBy` method for my polyfill subject.  
+- This method is really not great for Angular, as such a structure can be hard to iterate over in an Angular template.  You cannot use `Object.keys()`, and nested `keyvalue` pipes can be difficult to implement.
 
 ## Continued Development
 
