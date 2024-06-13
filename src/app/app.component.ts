@@ -1,36 +1,6 @@
 import { JsonPipe, KeyValuePipe, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
-export interface Root {
-  vegetables: Vegetable[]
-  fruit: Fruit[]
-  meat: Meat[]
-}
-
-export interface Vegetable {
-  name: string
-  type: string
-  quantity: number
-}
-
-export interface Fruit {
-  name: string
-  type: string
-  quantity: number
-}
-
-export interface Meat {
-  name: string
-  type: string
-  quantity: number
-}
-
-export interface Item {
-  name: string
-  type: string
-  quantity: number
-}
-
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -53,7 +23,6 @@ export class AppComponent {
   groupItemsByType(){
     // @ts-ignore
     this.groupedItems = Object.groupBy(this.inventory, ({ type }) => type);
-    console.log('groupedItems', this.groupedItems);
   }
 
 }
